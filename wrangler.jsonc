@@ -1,0 +1,24 @@
+{
+  "name": "my-ai-app",
+  "main": "src/index.js",
+  "compatibility_date": "2026-04-19",
+  "ai": {
+    "binding": "AI"
+  },
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "CHAT",
+        "class_name": "ChatMemory"
+      }
+    ]
+  },
+  "migrations": [
+  {
+    "tag": "v2",
+    "new_sqlite_classes": ["ChatMemory"],
+    "deleted_classes": ["MyDurableObject"]
+  }
+]
+  
+}
